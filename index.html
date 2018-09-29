@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- This is the main index document of GPX: Remastered. It is designed to be manipulated heavily by javascript, so the dependancies and contents in this document are not indicative of the actual content of the game. -->
+<html>
+<head>
+<!-- Styles -->
+<link rel="stylesheet" href="CSS/font-awesome.css"></link>
+<link rel="stylesheet" href="CSS/jquery-ui.min.css"></link>
+<link rel="stylesheet" href="CSS/main.css"></link>
+<script type="text/javascript" src="JS/load.js"></script>
+</head>
+<body>
+<style id="style">
+</style>
+<div id="background"><div id="overlay"></div></div>
+<!-- Main div is for text output and the menu display -->
+<div id="main" class="constant">
+	<div id="elem1" class="draggable resize handle" style="position: absolute; top:0; left: 0; width: 150px;">
+		<h4>Console <!--<i class="fa fa-compress button" data-action="compress"></i>--></h4>
+		<div id="console"></div>
+	</div>
+	<div id="elem2" class="draggable resize handle" style="position: absolute; bottom:0; left: 0; width: 150px;">
+		<h4>Actions</h4>
+		<div id="actions"></div>
+	</div>
+	<div id="elem3" class="draggable resize handle" style="position: absolute; top:0; right: 0; width: 150px;">
+		<h4>Inventory <i class="fa fa-dropbox"></i></h4>
+		<div id="inv"></div>
+	</div>
+	<div id="elem4" class="draggable resize handle" style="position: absolute; top:100px; right: 0; width: 150px;">
+		<h4>Map <i class="fa fa-map"></i></h4>
+		<div id="map"></div>
+	</div>
+	<div id="elem5" class="draggable resize handle" style="position: absolute; bottom:0; right: 0; width: 150px;">
+		<h4>Character <i class="fa fa-user-circle-o"></i></h4>
+		<div id="character"></div>
+	</div>
+</div>
+<!-- Sub div is for things like containing the various elements that don't need to live in the main div -->
+<div id="sub" class="constant"></div>
+<script type="text/javascript" src="JS/jquery.min.js"></script>
+<script type="text/javascript" src="JS/jquery.ui.min.js"></script>
+<script type="text/javascript" src="JS/nightingale.js"></script>
+<script type="text/javascript" src="JS/gpx_r_main.js"></script>
+<script type="text/javascript" src="JS/weapons.js"></script>
+</body>
+</html>
